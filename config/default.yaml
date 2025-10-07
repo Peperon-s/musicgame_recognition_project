@@ -1,0 +1,15 @@
+paths:
+  frames_dir: "project/frames"
+  dataset_dir: "project/dataset"
+  models_dir: "project/models"
+  logs_dir: "project/logs"
+
+preprocess:
+  target_size: [224, 224]
+  center_crop_size: null   # 例: 640 にすると正方クロップ
+  to_grayscale: false
+  mean: [0.485, 0.456, 0.406]
+  std:  [0.229, 0.224, 0.225]
+
+runtime:
+  prefer_gpu_module: true  # predata_release_3_gpu.py を優先インポート（あれば）
